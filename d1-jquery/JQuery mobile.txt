@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Delivery Webpage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <style>
+    /* Custom styles */
+    .custom-header {
+     
+      color:blueviolet;
+      text-align: center;
+      padding: 10px;
+      background-color: cornflowerblue;
+    }
+    .custom-content {
+      padding: 20px;
+    }
+    .custom-footer {
+      text-align: center;
+      padding: 10px;
+      background-color: blueviolet;
+    }
+    .restaurant {
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color:aquamarine
+    }
+   
+    .restaurant h2 {
+      text-align: center;
+      background-color:burlywood;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+  <div data-role="header" class="custom-header">
+    <h1>Food Delivery</h1>
+  </div>
+
+  <div data-role="content" class="custom-content">
+    <div class="restaurant">
+      <h2>Heaven Restaurant </h2>
+      <p>Description of Heaven Restaurant.</p>
+      <a href="#menu1" data-role="button" data-inline="true">View Menu</a>
+    </div>
+
+    <div class="restaurant">
+      <h2>Top class Restaurant </h2>
+      <p>Description of Top class Restaurant.</p>
+      <a href="#menu2" data-role="button" data-inline="true">View Menu</a>
+    </div>
+  </div>
+
+  <div data-role="footer" class="custom-footer">
+    <h4>&copy; 2024 Food Delivery</h4>
+  </div>
+</div>
+
+<!-- Menu Page for Restaurant 1 -->
+<div data-role="page" id="menu1">
+  <div data-role="header" class="custom-header">
+    <a href="#home" data-rel="back" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back">Back</a>
+    <h1>Menu - Heaven Restaurant</h1>
+  </div>
+
+  <div data-role="content" class="custom-content">
+    <p>Menu items for Heaven Restaurant.</p>
+    <ul data-role="listview">
+      <li>Burger - Rs.199</li>
+      <li>Pizza - Rs.299</li>
+      <li>Salad - Rs.99</li>
+    </ul>
+  </div>
+
+  <div data-role="footer" class="custom-footer">
+    <h4>&copy; 2024 Food Delivery</h4>
+  </div>
+</div>
+
+<!-- Menu Page for Restaurant 2 -->
+<div data-role="page" id="menu2">
+  <div data-role="header" class="custom-header">
+    <a href="#home" data-rel="back" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back">Back</a>
+    <h1>Menu - Top class Restaurant</h1>
+  </div>
+
+  <div data-role="content" class="custom-content">
+    <p>Menu items for Top class Restaurant .</p>
+    <ul data-role="listview">
+      <li>Sushi - Rs.399</li>
+      <li>Ramen - Rs. 299</li>
+      <li>Tempura - Rs. 199</li>
+    </ul>
+  </div>
+
+  <div data-role="footer" class="custom-footer">
+    <h4>&copy; 2024 Food Delivery</h4>
+  </div>
+</div>
+
+</body>
+</html>

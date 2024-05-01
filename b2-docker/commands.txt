@@ -1,0 +1,17 @@
+docker —version 
+
+
+Sudo docker images
+
+Sudo docker pull openjdk
+
+Sudo docker run - - name java -it -d  openjdk 
+
+Sudo docker ps
+
+Sudo docker exec -it java jshell
+
+Java code 
+
+/exit 
+
